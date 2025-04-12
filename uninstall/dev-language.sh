@@ -1,6 +1,6 @@
 # Uninstall default programming languages
-if [[ -v OMAKUB_FIRST_RUN_LANGUAGES ]]; then
-  languages=$OMAKUB_FIRST_RUN_LANGUAGES
+if [[ -v FEDOMAKUB_FIRST_RUN_LANGUAGES ]]; then
+  languages=$FEDOMAKUB_FIRST_RUN_LANGUAGES
 else
   AVAILABLE_LANGUAGES=("Ruby on Rails" "Node.js" "Go" "PHP" "Python" "Elixir" "Rust" "Java")
   languages=$(gum choose "${AVAILABLE_LANGUAGES[@]}" --no-limit --height 10 --header "Select programming languages to uninstall")
@@ -20,9 +20,11 @@ if [[ -n $languages ]]; then
       mise uninstall go@latest
       ;;
     PHP)
-      sudo apt -y purge php8.4 php8.4-{curl,apcu,intl,mbstring,opcache,pgsql,mysql,sqlite3,redis,xml,zip}
-      sudo add-apt-repository -y --remove ppa:ondrej/php
-      sudo rm /usr/local/bin/composer
+    sudo rm -f /usr/local/bin/composer
+    sudo dnf remove -y php php-{curl,apcu,intl,mbstring,opcache,pgsql,mysqlnd,sqlite3,redis,xml,zip}
+    sudo dnf module disable -y php:remi-8.4
+    sudo dnf remove -y remi-release
+    sudo dnf clean all
       ;;
     Python)
       mise uninstall python@latest
