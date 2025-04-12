@@ -1,3 +1,3 @@
-OMAKUB_THEME_COLOR="bark"
-OMAKUB_THEME_BACKGROUND="everforest/background.jpg"
-source $OMAKUB_PATH/themes/set-gnome-theme.sh
+FEDOMAKUB_THEME_COLOR="bark"
+FEDOMAKUB_THEME_BACKGROUND="everforest/background.jpg"
+source $FEDOMAKUB_PATH/themes/set-gnome-theme.sh
