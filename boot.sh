@@ -21,11 +21,11 @@ echo "Cloning Fedomakub..."
 rm -rf ~/.local/share/fedomakub
 git clone https://github.com/Josh-Voyles/fedomakub.git ~/.local/share/fedomakub >/dev/null
 # FEDOMAKUB_REF? Check
-if [[ $FEDOMAKUB_REF != "master" ]]; then
-	cd ~/.local/share/fedomakub
-	git fetch origin "${FEDOMAKUB_REF:-stable}" && git checkout "${FEDOMAKUB_REF:-stable}"
-	cd -
-fi
+# if [[ $FEDOMAKUB_REF != "master" ]]; then
+# 	cd ~/.local/share/fedomakub
+# 	git fetch origin "${FEDOMAKUB_REF:-stable}" && git checkout "${FEDOMAKUB_REF:-stable}"
+# 	cd -
+# fi
 
 echo "Installation starting..."
 source ~/.local/share/fedomakub/install.sh
