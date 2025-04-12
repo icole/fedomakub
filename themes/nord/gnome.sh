@@ -1,3 +1,3 @@
-OMAKUB_THEME_COLOR="blue"
-OMAKUB_THEME_BACKGROUND="nord/background.png"
-source $OMAKUB_PATH/themes/set-gnome-theme.sh
+FEDOMAKUB_THEME_COLOR="blue"
+FEDOMAKUB_THEME_BACKGROUND="nord/background.png"
+source $FEDOMAKUB_PATH/themes/set-gnome-theme.sh

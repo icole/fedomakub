@@ -1,1 +1,1 @@
-sudo snap install rubymine --classic
+flatpak install -y flathub com.jetbrains.RubyMine

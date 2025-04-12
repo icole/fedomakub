@@ -1,1 +1,1 @@
-sudo apt remove -y mainline
+# not relevant for Fedora

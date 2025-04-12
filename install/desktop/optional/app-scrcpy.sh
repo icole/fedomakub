@@ -1,8 +1,8 @@
 # Install dependencies
-sudo apt install -y ffmpeg libsdl2-2.0-0 adb wget \
-  gcc git pkg-config meson ninja-build libsdl2-dev \
-  libavcodec-dev libavdevice-dev libavformat-dev libavutil-dev \
-  libswresample-dev libusb-1.0-0 libusb-1.0-0-dev
+sudo dnf install -y ffmpeg SDL2 ad-tools wget \
+  gcc git pkg-config meson ninja-build SDL2-devel \
+  libavcodec-devel libavdevice-devel libavformat-devel libavutil-devel \
+  libswresample-devel libusbx-devel
 
 # Install latest Scrcpy straight from GitHub
 cd /tmp
@@ -20,7 +20,7 @@ Comment=Android Screen Mirroring
 Exec=scrcpy -S
 Terminal=false
 Type=Application
-Icon=/home/$USER/.local/share/omakub/applications/icons/Android.png
+Icon=/home/$USER/.local/share/fedomakub/applications/icons/Android.png
 Categories=GTK;
 StartupNotify=false
 EOF

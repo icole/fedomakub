@@ -1,6 +1,6 @@
 # Install default programming languages
-if [[ -v OMAKUB_FIRST_RUN_LANGUAGES ]]; then
-  languages=$OMAKUB_FIRST_RUN_LANGUAGES
+if [[ -v FEDOMAKUB_FIRST_RUN_LANGUAGES ]]; then
+  languages=$FEDOMAKUB_FIRST_RUN_LANGUAGES
 else
   AVAILABLE_LANGUAGES=("Ruby on Rails" "Node.js" "Go" "PHP" "Python" "Elixir" "Rust" "Java")
   languages=$(gum choose "${AVAILABLE_LANGUAGES[@]}" --no-limit --height 10 --header "Select programming languages")
@@ -20,12 +20,13 @@ if [[ -n "$languages" ]]; then
       mise use --global go@latest
       ;;
     PHP)
-      sudo add-apt-repository -y ppa:ondrej/php
-      sudo apt -y install php8.4 php8.4-{curl,apcu,intl,mbstring,opcache,pgsql,mysql,sqlite3,redis,xml,zip}
-      php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-      php composer-setup.php --quiet && sudo mv composer.phar /usr/local/bin/composer
-      rm composer-setup.php
-      ;;
+    sudo dnf install -y https://rpms.remirepo.net/fedora/remi-release-$(rpm -E %fedora).rpm
+    sudo dnf module enable -y php:remi-8.4
+    sudo dnf install -y php php-{curl,apcu,intl,mbstring,opcache,pgsql,mysqlnd,sqlite3,redis,xml,zip}
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    php composer-setup.php --quiet && sudo mv composer.phar /usr/local/bin/composer
+    rm composer-setup.php
+    ;;
     Python)
       mise use --global python@latest
       ;;

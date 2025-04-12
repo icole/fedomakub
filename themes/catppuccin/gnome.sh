@@ -1,3 +1,3 @@
-OMAKUB_THEME_COLOR="magenta"
-OMAKUB_THEME_BACKGROUND="catppuccin/background.png"
-source $OMAKUB_PATH/themes/set-gnome-theme.sh
+FEDOMAKUB_THEME_COLOR="magenta"
+FEDOMAKUB_THEME_BACKGROUND="catppuccin/background.png"
+source $FEDOMAKUB_PATH/themes/set-gnome-theme.sh

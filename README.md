@@ -8,6 +8,8 @@ For more details and the original inspiration, please visit [omakub.org](https:/
 
 Contribue to the original Omakub here: [basecamp/omakub-site repository](https://github.com/basecamp/omakub-site).
 
+Big thanks to [hangodek](https://github.com/hangodek) for doing a lot of the Fedora legwork on his repo. This saved me at least a week of time trying to figure things out.
+
 ## License
 
 Fedomakub is released under the [MIT License](https://opensource.org/licenses/MIT).
