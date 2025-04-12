@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source $FEDOMAKUB_PATH/bin/fedomakub-sub/header.sh
+source $FEDOMAKUB_PATH/bin/fedomakub-sub/menu.sh

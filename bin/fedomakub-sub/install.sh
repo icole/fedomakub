@@ -7,7 +7,6 @@ CHOICES=(
   "ASDControl        Set brightness on Apple Studio and XDR displays via cli"
   "Brave             Chrome-based browser with built-in ad blocking"
   "Dropbox           Sync files across computers with ease"
-  "Mainline Kernels  Install newer Linux kernels than Ubuntu defaults"
   "OBS Studio        Record screencasts with inputs from both display + webcam"
   "Ollama            Run LLMs, like Meta's Llama3, locally"
   "Scrcpy            Android screen mirroring (requires dev mode / USB debug on!)"
