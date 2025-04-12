@@ -1,4 +1,4 @@
-import = [ "~/.local/share/omakub/defaults/alacritty/pane.toml" ]
+import = ["~/.local/share/fedomakub/defaults/alacritty/pane.toml"]
 
 [window]
 dimensions.columns = 121
@@ -8,4 +8,3 @@ dimensions.lines = 40
 [colors.primary]
 foreground = '#ffffff'
 background = '#000000'
-
