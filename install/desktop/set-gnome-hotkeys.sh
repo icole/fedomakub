@@ -17,6 +17,10 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift>F11']
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
 
+# Alt + Tab without stacked app
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['Disabled']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+
 # Use alt for pinned apps
 gsettings set org.gnome.shell.keybindings switch-to-application-1 "['<Alt>1']"
 gsettings set org.gnome.shell.keybindings switch-to-application-2 "['<Alt>2']"
