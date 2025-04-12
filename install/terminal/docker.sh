@@ -1,5 +1,8 @@
 # Install Docker engine and standard plugins
-sudo dnf install -y moby-engine containerd docker-buildx docker-cli docker-compose docker-compose-switch
+sudo dnf config-manager addrepo --from-repofile=https://download.docker.com/linux/fedora/docker-ce.repo --overwrite
+
+# Install Docker engine and standard plugins
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 
 # Give this user privileged Docker access
 sudo usermod -aG docker ${USER}
