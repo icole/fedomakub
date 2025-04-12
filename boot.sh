@@ -14,7 +14,7 @@ echo -e "$ascii_art"
 echo "=> Fedomakub is for fresh Fedorda 41+ installations only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
-sudo dnf update >/dev/null
+sudo dnf update -y >/dev/null
 sudo dnf install -y git >/dev/null
 
 echo "Cloning Fedomakub..."
