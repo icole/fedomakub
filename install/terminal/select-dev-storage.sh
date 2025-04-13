@@ -6,6 +6,11 @@ else
 	dbs=$(gum choose "${AVAILABLE_DBS[@]}" --no-limit --height 5 --header "Select databases (runs in Docker)")
 fi
 
+if ! systemctl is-active --quiet docker; then
+    echo "Docker daemon is not running. Starting Docker..."
+    sudo systemctl start docker
+fi
+
 if [[ -n "$dbs" ]]; then
 	for db in $dbs; do
 		case $db in
