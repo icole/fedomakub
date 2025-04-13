@@ -1,2 +1,2 @@
 # Provides a system clipboard interface for Neovim under Wayland
-sudo dnf install wl-clipboard -y
+sudo dnf install -y wl-clipboard
