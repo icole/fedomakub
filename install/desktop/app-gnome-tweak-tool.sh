@@ -1,2 +1,2 @@
 sudo dnf install -y gnome-tweak-tool
-flatpak install com.mattjakeman.ExtensionManager
+flatpak install -y com.mattjakeman.ExtensionManager
