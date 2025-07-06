@@ -19,7 +19,7 @@ sudo dnf install -y git >/dev/null
 
 echo "Cloning Fedomakub..."
 rm -rf ~/.local/share/fedomakub
-git clone https://github.com/Josh-Voyles/fedomakub.git ~/.local/share/fedomakub >/dev/null
+git clone https://github.com/icole/fedomakub.git ~/.local/share/fedomakub >/dev/null
 # FEDOMAKUB_REF? Check
 # if [[ $FEDOMAKUB_REF != "master" ]]; then
 # 	cd ~/.local/share/fedomakub
